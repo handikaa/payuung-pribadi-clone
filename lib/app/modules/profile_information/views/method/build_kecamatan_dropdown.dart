@@ -15,8 +15,7 @@ Widget buildKecamatanDropdown({
             borderRadius: BorderRadius.circular(5),
             borderSide: const BorderSide(color: Colors.black),
           ),
-          filled:
-              previousItem.value.isEmpty, // Disable if previousItem is empty
+          filled: previousItem.value.isEmpty,
           fillColor: previousItem.value.isEmpty ? Colors.grey[300] : null,
         ),
         hint: const Text(
@@ -25,7 +24,7 @@ Widget buildKecamatanDropdown({
         ),
         value: selectedItem.value.isEmpty ? null : selectedItem.value,
         onChanged: previousItem.value.isEmpty
-            ? null // Disable the dropdown if previousItem is empty
+            ? null
             : (String? newValue) {
                 selectedItem.value = newValue ?? '';
               },

@@ -178,26 +178,6 @@ class ProfileInformationController extends GetxController {
     }
   }
 
-  // Future<void> loadProfileInformation() async {
-  //   ProfileInformation profileData =
-  //       await HiveLocalDatabase.getProfileInformation();
-
-  //   print('wkwkwkwkwk :${profileData}');
-  //   if (profileData.isInBox) {
-  //     print('ada');
-  //     namaLengkapC.text = profileData.namaLengkap ?? '';
-  //     emailC.text = profileData.email ?? '';
-  //     noHpC.text = profileData.noHp ?? '';
-  //     selectedDate.value = profileData.selectedDate ?? '';
-  //     genderSelected.value = profileData.genderSelected ?? '';
-  //     pendidikanSelected.value = profileData.pendidikanSelected ?? '';
-  //     statusPernikahanSelected.value =
-  //         profileData.statusPernikahanSelected ?? '';
-  //   } else {
-  //     print('Ga ada');
-  //   }
-  // }
-
   Future<void> loadAlamatPribadi() async {
     var box = Hive.box<AlamatPribadi>('alamatBox');
     final alamat = box.get('alamat');
