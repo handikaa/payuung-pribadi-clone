@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+
+import '../../controllers/profile_information_controller.dart';
+
+Widget buildPendidikanDropdown(
+    {required ProfileInformationController controller}) {
+  return Obx(() => Container(
+        width: Get.width,
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black, width: 1),
+          borderRadius: const BorderRadius.all(Radius.circular(5)),
+        ),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: DropdownButtonHideUnderline(
+          child: DropdownButton<String>(
+            hint: const Text(
+              'Pilih Pendidikan',
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+            ),
+            value: controller.pendidikanSelected.value.isEmpty
+                ? null
+                : controller.pendidikanSelected.value,
+            onChanged: (String? newValue) {
+              controller.pendidikanSelected.value = newValue ?? '';
+            },
+            items: controller.pendidikan
+                .map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(
+                  value,
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
+                ),
+              );
+            }).toList(),
+          ),
+        ),
+      ));
+}
