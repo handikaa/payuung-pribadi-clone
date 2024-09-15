@@ -146,8 +146,8 @@ class DashboardView extends GetView<DashboardController> {
                     maintainAnimation: true,
                     maintainState: true,
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 25,
+                      padding: EdgeInsets.symmetric(
+                        horizontal: Get.width > 700 ? 90 : 25,
                       ),
                       child: Column(
                         children: [

@@ -13,7 +13,7 @@ class HomeController extends GetxController {
     'Harga Tertinggi',
   ].obs;
 
-  RxList<WellnessModel> filteredWellness = RxList([]);
+  RxList<WellnessModel> filteredWellness = <WellnessModel>[].obs;
 
   void filterWellness() {
     switch (dropdownValue.value) {

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class DashboardController extends GetxController {
+class DashboardController extends GetxController
+    with GetSingleTickerProviderStateMixin {
   RxInt selectedIndex = 0.obs;
   RxBool isExpanded = false.obs;
   RxDouble height = 85.0.obs;
