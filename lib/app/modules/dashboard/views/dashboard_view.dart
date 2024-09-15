@@ -59,7 +59,7 @@ class DashboardView extends GetView<DashboardController> {
                                       height: 18,
                                     ),
                                     SvgPicture.asset(
-                                      'assets/home.svg',
+                                      'assets/icons/home.svg',
                                       color: controller.selectedIndex.value == 0
                                           ? Colors.amber
                                           : Colors.grey,
@@ -75,7 +75,7 @@ class DashboardView extends GetView<DashboardController> {
                                       height: 18,
                                     ),
                                     SvgPicture.asset(
-                                      'assets/search.svg',
+                                      'assets/icons/search.svg',
                                       color: controller.selectedIndex.value == 1
                                           ? Colors.amber
                                           : Colors.grey,
@@ -94,7 +94,7 @@ class DashboardView extends GetView<DashboardController> {
                                           height: 18,
                                         ),
                                         SvgPicture.asset(
-                                          'assets/cart.svg',
+                                          'assets/icons/cart.svg',
                                           color:
                                               controller.selectedIndex.value ==
                                                       2
@@ -160,7 +160,7 @@ class DashboardView extends GetView<DashboardController> {
                                     height: 18,
                                   ),
                                   SvgPicture.asset(
-                                    'assets/cart.svg',
+                                    'assets/icons/cart.svg',
                                   ),
                                   const Text(
                                     'Daftar Transaksi',
@@ -174,7 +174,7 @@ class DashboardView extends GetView<DashboardController> {
                                     height: 18,
                                   ),
                                   SvgPicture.asset(
-                                    'assets/cart.svg',
+                                    'assets/icons/cart.svg',
                                   ),
                                   const Text(
                                     'Daftar Transaksi',
@@ -188,7 +188,7 @@ class DashboardView extends GetView<DashboardController> {
                                     height: 18,
                                   ),
                                   SvgPicture.asset(
-                                    'assets/cart.svg',
+                                    'assets/icons/cart.svg',
                                   ),
                                   const Text(
                                     'Daftar Transaksi',
@@ -208,7 +208,7 @@ class DashboardView extends GetView<DashboardController> {
                                     height: 18,
                                   ),
                                   SvgPicture.asset(
-                                    'assets/cart.svg',
+                                    'assets/icons/cart.svg',
                                   ),
                                   const Text(
                                     'Daftar Transaksi',
